@@ -5,6 +5,7 @@
 
   display: flex;
   justify-content: space-between;
+  position: fixed;
 
   padding: 48px 16px;
 }
@@ -18,7 +19,7 @@
 .container {
   max-width: 1220px;
   
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 24px 16px;
 
   display: flex;
@@ -28,6 +29,7 @@
 
 .container-item:nth-child(1) {
   flex-grow: 2;
+  max-width: 680px;
 
   margin: 40px 0;
 }
@@ -47,7 +49,7 @@
 }
 
 .hero {
-  height: 85vh;
+  height: 100vh;
 }
 
 .bg-hero {
@@ -79,7 +81,81 @@
 
 // SELECTED WORKS
 .list {
-  
+  margin-top: 400px;
+}
+
+.list-item {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  a:hover {
+    & + .img-project {
+      opacity: 1;
+      transform: translate(-35%, -50%) translate3d(0, 0, 0);
+    }
+  }
+}
+
+.img-project {
+  max-width: 720px;
+  border-radius: 4px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  z-index: -1;
+
+  transition: 1s ease;
+  opacity: 0;
+  transform: translate(-35%, -50%) translate3d(-2000px, 0, 0) skew(60deg);
+}
+
+.line-gray {
+  border: 0;
+  border-bottom: 1px solid $black-light;
+}
+
+.get {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+// ANIMATIONS
+#circle-1, #circle-2, #circle-3 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotate 1s ease infinite alternate;
+}
+
+@keyframes rotate{
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(10px);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .svg-hero {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .svg-hero {
+    transform: scale(2);
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -90,10 +166,10 @@
   .container {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 960px) {
-  .svg-hero {
-    transform: scale(2) rotate(25deg);
+  .bg-hero {
+    .svg-hero {
+      transform: scale(2) rotate(25deg);
+    }
   }
 }
