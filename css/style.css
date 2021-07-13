@@ -792,6 +792,10 @@ body {
   padding: 48px 16px;
 }
 
+.menu .menu-logo h5 {
+  text-transform: uppercase;
+}
+
 .relative {
   position: relative;
 }
