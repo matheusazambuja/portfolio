@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'sass/colors';
+@import 'sass/typography';
+
+body {
+  width: 100%;
+
+  background-color: $black-dark;
+}
+
+@media screen and (max-width: 960px) {
+  .menu {
+
+    .menu-logo {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .menu-left {
+      display: none;
+    }
+  
+    .menu-right {
+      display: none;
+    }
+  }
+}
+
+.border {
+  border: 1px solid red;
+}
+
+@import 'sass/spacing';
+@import 'sass/layout';
