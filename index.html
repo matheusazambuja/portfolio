@@ -219,9 +219,9 @@
           duration: 1,
           y: 50,
           opacity: 0,
-          delay: 0.5,
+          delay: 0.2,
           ease: "power3.out"
-        }, "-=0.8")
+        })
         .from(".menu-2", {
           duration: 1,
           y: 50,
@@ -252,19 +252,13 @@
           opacity: 0,
           stagger: { each: 0.2 },
           ease: "power3.out"
-        }, "-=0.8")
-        .from(".container-item img", {
-          duration: 1,
-          y: 300,
-          opacity: 0,
-          ease: "power3.out"
-        }, "-=0.8")
+        })
         .from(".bg-hero", {
           duration: 1,
           y: 300,
           opacity: 0,
           ease: "power3.out"
-        }, "-=0.8")
+        })
 
       gsap.registerPlugin(ScrollTrigger);
 

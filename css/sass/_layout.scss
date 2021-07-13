@@ -145,31 +145,31 @@
 #circle-1, #circle-3 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: translate1 1s ease infinite alternate;
+  animation: translate1 1s ease 5s infinite alternate;
 }
 
 #circle-2 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: translate3 1s ease infinite alternate;
+  animation: translate3 1s ease 5s infinite alternate;
 }
 
 #circle-4 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: translate1 1s ease infinite alternate;
+  animation: translate1 1s ease 5s infinite alternate;
 }
 
 #circle-5 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: translate2 1s ease infinite alternate;
+  animation: translate2 1s ease 5s infinite alternate;
 }
 
 #circle-6 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: translate4 1s ease infinite alternate;
+  animation: translate4 1s ease 5s infinite alternate;
 }
 
 @keyframes translate1{
