@@ -935,40 +935,30 @@ h6 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   transform-box: fill-box;
-  -webkit-animation: translate1 1s ease 5s infinite alternate;
-          animation: translate1 1s ease 5s infinite alternate;
 }
 
 #circle-2 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   transform-box: fill-box;
-  -webkit-animation: translate3 1s ease 5s infinite alternate;
-          animation: translate3 1s ease 5s infinite alternate;
 }
 
 #circle-4 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   transform-box: fill-box;
-  -webkit-animation: translate1 1s ease 5s infinite alternate;
-          animation: translate1 1s ease 5s infinite alternate;
 }
 
 #circle-5 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   transform-box: fill-box;
-  -webkit-animation: translate2 1s ease 5s infinite alternate;
-          animation: translate2 1s ease 5s infinite alternate;
 }
 
 #circle-6 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   transform-box: fill-box;
-  -webkit-animation: translate4 1s ease 5s infinite alternate;
-          animation: translate4 1s ease 5s infinite alternate;
 }
 
 @-webkit-keyframes translate1 {
@@ -1021,8 +1011,8 @@ h6 {
             transform: translate(0);
   }
   100% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
   }
 }
 
@@ -1032,8 +1022,8 @@ h6 {
             transform: translate(0);
   }
   100% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
   }
 }
 
