@@ -81,7 +81,8 @@
 
 // SELECTED WORKS
 .list {
-  margin-top: 400px;
+  margin-top: 250px;
+  padding-top: 150px;
 }
 
 .list-item {
@@ -98,13 +99,13 @@
   a:hover {
     & + .img-project {
       opacity: 1;
-      transform: translate(-35%, -50%) translate3d(0, 0, 0);
+      transform: translate(-35%, -50%) translate3d(100px, 0, 0);
     }
   }
 }
 
 .img-project {
-  max-width: 720px;
+  max-width: 620px;
   border-radius: 4px;
 
   position: absolute;
@@ -131,18 +132,69 @@
 }
 
 // ANIMATIONS
-#circle-1, #circle-2, #circle-3 {
+#circle-1, #circle-3 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: rotate 1s ease infinite alternate;
+  animation: translate1 1s ease infinite alternate;
 }
 
-@keyframes rotate{
+#circle-2 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: translate3 1s ease infinite alternate;
+}
+
+#circle-4 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: translate1 1s ease infinite alternate;
+}
+
+#circle-5 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: translate2 1s ease infinite alternate;
+}
+
+#circle-6 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: translate4 1s ease infinite alternate;
+}
+
+@keyframes translate1{
   0% {
     transform: translate(0);
   }
   100% {
     transform: translate(10px);
+  }
+}
+
+@keyframes translate2 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes translate3 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes translate4 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(10px) translateY(10px);
   }
 }
 
