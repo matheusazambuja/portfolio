@@ -1,0 +1,99 @@
+// MENU
+
+.menu {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 48px 16px;
+}
+
+// CONTAINER
+
+.relative {
+  position: relative;
+}
+
+.container {
+  max-width: 1220px;
+  
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-item:nth-child(1) {
+  flex-grow: 2;
+
+  margin: 40px 0;
+}
+
+.container-item:nth-child(2) {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40px 0;
+
+  img {
+    max-width: 400px;
+  }
+}
+
+.hero {
+  height: 85vh;
+}
+
+.bg-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-circle {
+  z-index: 1;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+// SELECTED WORKS
+.list {
+  
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .svg-hero {
+    transform: scale(2) rotate(25deg);
+  }
+}
