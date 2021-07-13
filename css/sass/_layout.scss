@@ -25,7 +25,7 @@
 .container {
   max-width: 1220px;
   
-  // margin: 0 auto;
+  margin-left: 64px;
   padding: 24px 16px;
 
   display: flex;
@@ -73,6 +73,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .svg-hero {
+    box-shadow: inset 0 0 200px $black-dark;
+  }
 }
 
 .container-circle {
@@ -206,13 +210,7 @@
 
 @media screen and (max-width: 1400px) {
   .svg-hero {
-    transform: scale(1.5);
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .svg-hero {
-    transform: scale(2);
+    transform: scale(1.1);
   }
 }
 
@@ -223,11 +221,37 @@
 
   .container {
     flex-direction: column;
+    margin-left: 16px;
   }
 
   .bg-hero {
     .svg-hero {
-      transform: scale(2) rotate(25deg);
+      transform: scale(1.2) rotate(40deg);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .svg-hero {
+    transform: scale(2);
+  }
+
+  #section-01 {
+    margin-top: 150px;
+  }
+
+  .bg-hero {
+    .svg-hero {
+      transform: scale(2) rotate(40deg);
+    }
+  }
+
+  .circle {
+    justify-content: center;
+
+    transform: translate(50%, -26%);
+    &::after {  
+      transform: translate(-12%, -26%) rotate(-119.91deg);
     }
   }
 }
