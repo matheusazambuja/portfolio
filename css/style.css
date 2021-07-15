@@ -105,34 +105,7 @@ h6 {
 }
 
 .circle {
-  display: inline-block;
-  margin-top: 64px;
   font-size: 24px;
-  padding: 16px 24px;
-  position: relative;
-}
-
-.circle::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 120px;
-  height: 120px;
-  -webkit-transform: translate(-6.5%, -25%) rotate(-119.91deg);
-          transform: translate(-6.5%, -25%) rotate(-119.91deg);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 71, 71, 0.08)), to(rgba(238, 71, 71, 0.72)));
-  background: linear-gradient(180deg, rgba(238, 71, 71, 0.08) 0%, rgba(238, 71, 71, 0.72) 100%);
-  border-radius: 9999px;
-}
-
-.circle:hover::after {
-  -webkit-transform: translate(-6.5%, -25%) rotate(-90deg);
-          transform: translate(-6.5%, -25%) rotate(-90deg);
 }
 
 @media screen and (max-width: 960px) {
@@ -867,6 +840,37 @@ h6 {
   z-index: 1;
 }
 
+.container-circle .circle {
+  display: inline-block;
+  margin-top: 64px;
+  font-size: 24px;
+  padding: 16px 24px;
+  position: relative;
+}
+
+.container-circle .circle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 120px;
+  height: 120px;
+  -webkit-transform: translate(-6.5%, -25%) rotate(-119.91deg);
+          transform: translate(-6.5%, -25%) rotate(-119.91deg);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 71, 71, 0.08)), to(rgba(238, 71, 71, 0.72)));
+  background: linear-gradient(180deg, rgba(238, 71, 71, 0.08) 0%, rgba(238, 71, 71, 0.72) 100%);
+  border-radius: 9999px;
+}
+
+.container-circle .circle:hover::after {
+  -webkit-transform: translate(-6.5%, -25%) rotate(-90deg);
+          transform: translate(-6.5%, -25%) rotate(-90deg);
+}
+
 .flex-end {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,13 +917,13 @@ h6 {
   top: 50%;
   left: 50%;
   z-index: -1;
+  opacity: 0;
+  -webkit-transform: translate(-35%, -50%) translate3d(-2000px, 0, 0) skew(60deg);
+          transform: translate(-35%, -50%) translate3d(-2000px, 0, 0) skew(60deg);
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
   transition: transform 1s ease;
   transition: transform 1s ease, -webkit-transform 1s ease;
-  opacity: 0;
-  -webkit-transform: translate(-35%, -50%) translate3d(-2000px, 0, 0) skew(60deg);
-          transform: translate(-35%, -50%) translate3d(-2000px, 0, 0) skew(60deg);
 }
 
 .line-gray {
