@@ -286,24 +286,14 @@
 
   .bg-hero {
     .svg-hero {
-      transform: scale(1.2) rotate(40deg);
+      transform: scale(2) rotate(20deg);
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .svg-hero {
-    transform: scale(2);
-  }
-
   #section-01 {
     margin-top: 150px;
-  }
-
-  .bg-hero {
-    .svg-hero {
-      transform: scale(2) rotate(40deg);
-    }
   }
 
   .circle {

@@ -956,22 +956,14 @@ h6 {
     margin-left: 16px;
   }
   .bg-hero .svg-hero {
-    -webkit-transform: scale(1.2) rotate(40deg);
-            transform: scale(1.2) rotate(40deg);
+    -webkit-transform: scale(2) rotate(20deg);
+            transform: scale(2) rotate(20deg);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .svg-hero {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
   #section-01 {
     margin-top: 150px;
-  }
-  .bg-hero .svg-hero {
-    -webkit-transform: scale(2) rotate(40deg);
-            transform: scale(2) rotate(40deg);
   }
   .circle {
     -webkit-box-pack: center;
