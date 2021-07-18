@@ -79,10 +79,10 @@
   }
 }
 
-.container-circle {
+.container-square {
   z-index: 1;
 
-  .circle {
+  .square {
 
     display: inline-block;
     margin-top: 64px;
@@ -105,17 +105,17 @@
   
       width: 120px;
       height: 120px;
-  
-      transform: translate(-6.5%, -25%) rotate(-119.91deg);
+
       transition: .5s ease;
   
-      background: linear-gradient(180deg, rgba(238, 71, 71, 0.08) 0%, rgba(238, 71, 71, 0.72) 100%);
-      border-radius: 9999px;
+      background: linear-gradient(221.6deg, rgba(218, 42, 42, 0.6) -8.45%, rgba(238, 71, 71, 0.6) -8.44%, rgba(196, 22, 22, 0.168) 76.17%);
+      border-radius: 4px;
+      transform: translate(-6.5%, -25%) rotate(25.12deg);
     }
   
     &:hover {
       &::after {
-        transform: translate(-6.5%, -25%) rotate(-90deg);
+        transform: translate(-6.5%, -25%) rotate(90deg);
       }
     }
   }
@@ -181,90 +181,26 @@
 }
 
 // ANIMATIONS
-// #circle-1, #circle-3 {
-//   transform-origin: center center;
-//   transform-box: fill-box;
-//   animation: translate1 0.3s ease 5s infinite alternate;
 
-//   will-change: animation;
-// }
+#square1, #square2, #square3 {
+  transform-origin: center center;
 
-// #circle-2 {
-//   transform-origin: center center;
-//   transform-box: fill-box;
-//   animation: translate3 0.2s ease 5s infinite alternate;
+  transform-box: fill-box;
 
-//   will-change: animation;
-// }
+  animation: rotate4 2s linear infinite alternate;
+  animation-delay: 3s;
 
-// #circle-4 {
-//   transform-origin: center center;
-//   transform-box: fill-box;
-//   animation: translate1 1s ease 5s infinite alternate;
+  will-change: animation;
+}
 
-//   will-change: animation;
-// }
-
-// #circle-5 {
-//   transform-origin: center center;
-//   transform-box: fill-box;
-//   animation: translate4 10s ease infinite alternate;
-//   animation-delay: 5s;
-
-//   pointer-events: none;
-
-//   will-change: animation;
-// }
-
-// #circle-6 {
-//   transform-origin: center center;
-
-//   transform-box: fill-box;
-
-//   animation: translate4 1s linear infinite alternate;
-//   animation-delay: 4s;
-
-//   // pointer-events: none;
-//   // visibility: hidden;
-
-//   will-change: animation;
-// }
-
-// @keyframes translate1{
-//   0% {
-//     transform: translate(0);
-//   }
-//   100% {
-//     transform: translate(10px);
-//   }
-// }
-
-// @keyframes translate2 {
-//   0% {
-//     transform: translate(0);
-//   }
-//   100% {
-//     transform: translateY(20px);
-//   }
-// }
-
-// @keyframes translate3 {
-//   0% {
-//     transform: translate(0);
-//   }
-//   100% {
-//     transform: translateX(20px);
-//   }
-// }
-
-// @keyframes translate4 {
-//   0% {
-//     transform: translate(0);
-//   }
-//   100% {
-//     transform: translate(50px);
-//   }
-// }
+@keyframes rotate4 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
 
 
 // MEDIA QUERIES
