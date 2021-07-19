@@ -90,8 +90,8 @@ h6 {
 }
 
 .mask {
-  background: -webkit-gradient(linear, left top, left bottom, from(#C41616), to(rgba(218, 42, 42, 0.99)));
-  background: linear-gradient(180deg, #C41616 0%, rgba(218, 42, 42, 0.99) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C21313), to(rgba(218, 42, 42, 0.99)));
+  background: linear-gradient(180deg, #C21313 0%, rgba(218, 42, 42, 0.99) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -832,8 +832,8 @@ h6 {
 }
 
 .bg-hero .svg-hero {
-  -webkit-box-shadow: inset 0 0 200px #211D1D;
-          box-shadow: inset 0 0 200px #211D1D;
+  -webkit-box-shadow: inset 0 0 200px #0D0C0C;
+          box-shadow: inset 0 0 200px #0D0C0C;
 }
 
 .container-square {
@@ -855,19 +855,19 @@ h6 {
   top: 0;
   left: 0;
   z-index: -1;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  background: linear-gradient(221.6deg, rgba(218, 42, 42, 0.6) -8.45%, rgba(238, 71, 71, 0.6) -8.44%, rgba(196, 22, 22, 0.168) 76.17%);
   border-radius: 4px;
-  -webkit-transform: translate(-6.5%, -25%) rotate(25.12deg);
-          transform: translate(-6.5%, -25%) rotate(25.12deg);
+  background: linear-gradient(221.6deg, #DA2A2A -8.45%, #EE4747 -8.44%, rgba(196, 22, 22, 0.28) 76.17%);
+  -webkit-transform: translate(-12%, -26%) rotate(25.02deg);
+          transform: translate(-12%, -26%) rotate(25.02deg);
 }
 
 .container-square .square:hover::after {
-  -webkit-transform: translate(-6.5%, -25%) rotate(90deg);
-          transform: translate(-6.5%, -25%) rotate(90deg);
+  -webkit-transform: translate(-11%, -25%) rotate(130deg);
+          transform: translate(-11%, -25%) rotate(130deg);
 }
 
 .flex-end {
@@ -927,46 +927,13 @@ h6 {
 
 .line-gray {
   border: 0;
-  border-bottom: 1px solid #403636;
+  border-bottom: 1px solid #171616;
 }
 
 .get {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
-}
-
-#square1, #square2, #square3 {
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  transform-box: fill-box;
-  -webkit-animation: rotate4 2s linear infinite alternate;
-          animation: rotate4 2s linear infinite alternate;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  will-change: animation;
-}
-
-@-webkit-keyframes rotate4 {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
-  }
-}
-
-@keyframes rotate4 {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(50deg);
-            transform: rotate(50deg);
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1016,7 +983,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #211D1D;
+  background-color: #0D0C0C;
 }
 
 @media screen and (max-width: 960px) {
