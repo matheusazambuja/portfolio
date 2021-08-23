@@ -1,11 +1,17 @@
-h1, h2, h3, h4, h5, h6, p, a {
-  color: $white-normal;
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
 }
 
 a {
+  color: $white-normal;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
   text-decoration: none;
+}
+
+p {
+  color: $white-normal;
 }
 
 .link {
@@ -46,37 +52,43 @@ a {
 }
 
 h1 {
+  color: $white-light;
   font-size: 96px;
   line-height: 100%;
 }
 
 h2 {
+  color: $white-normal;
   font-size: 72px;
   line-height: 110%;
 }
 
 h3 {
+  color: $white-normal;
   font-size: 54px; 
   line-height: 110%;
 }
 
 h4 {
+  color: $white-dark;
   font-size: 32px;
   line-height: 120%;
 }
 
 h5 {
+  color: $white-dark;
   font-size: 24px;
   line-height: 130%;
 }
 
 h6 {
+  color: $white-dark;
   font-size: 18px;
   line-height: 150%;
 }
 
 .mask {
-  background: linear-gradient(180deg, #C21313 0%, rgba(218, 42, 42, 0.99) 100%);
+  background: linear-gradient(180deg, #274AD7 0%, rgba(56, 92, 235, 0.99) 100%);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -122,7 +134,7 @@ h6 {
     font-size: 18px;
   }
 
-  .circle {
+  .square {
     font-size: 18px;
   }
 }

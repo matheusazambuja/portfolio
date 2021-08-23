@@ -6,25 +6,31 @@
 }
 
 .color-gray-1 {
-  color: #3E3F40;
-}
-
-.color-gray-2 {
-  color: #4F4D51;
-}
-
-.color-gray-3 {
   color: #5D5E61;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
-  color: #F2F2F2;
+.color-gray-2 {
+  color: #4D4E51;
+}
+
+.color-gray-3 {
+  color: #3E3E40;
+}
+
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
 }
 
 a {
+  color: #DCDEE5;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
   text-decoration: none;
+}
+
+p {
+  color: #DCDEE5;
 }
 
 .link {
@@ -44,7 +50,7 @@ a {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #F2F2F2;
+  background-color: #DCDEE5;
   -webkit-transform: translateX(22%);
           transform: translateX(22%);
   -webkit-transition: .5s ease;
@@ -60,38 +66,44 @@ a {
 }
 
 h1 {
+  color: #EBEDF2;
   font-size: 96px;
   line-height: 100%;
 }
 
 h2 {
+  color: #DCDEE5;
   font-size: 72px;
   line-height: 110%;
 }
 
 h3 {
+  color: #DCDEE5;
   font-size: 54px;
   line-height: 110%;
 }
 
 h4 {
+  color: #C5C9D9;
   font-size: 32px;
   line-height: 120%;
 }
 
 h5 {
+  color: #C5C9D9;
   font-size: 24px;
   line-height: 130%;
 }
 
 h6 {
+  color: #C5C9D9;
   font-size: 18px;
   line-height: 150%;
 }
 
 .mask {
-  background: -webkit-gradient(linear, left top, left bottom, from(#C21313), to(rgba(218, 42, 42, 0.99)));
-  background: linear-gradient(180deg, #C21313 0%, rgba(218, 42, 42, 0.99) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#274AD7), to(rgba(56, 92, 235, 0.99)));
+  background: linear-gradient(180deg, #274AD7 0%, rgba(56, 92, 235, 0.99) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -131,7 +143,7 @@ h6 {
   h5 {
     font-size: 18px;
   }
-  .circle {
+  .square {
     font-size: 18px;
   }
 }
@@ -757,6 +769,10 @@ h6 {
   padding: 48px 16px;
 }
 
+.menu .menu-logo {
+  color: #EBEDF2;
+}
+
 .menu .menu-logo h5 {
   text-transform: uppercase;
 }
@@ -767,25 +783,50 @@ h6 {
 
 .container {
   max-width: 1220px;
-  margin-left: 64px;
+  margin: 0 auto;
   padding: 24px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .container-item:nth-child(1) {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  max-width: 680px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 40px 0;
+}
+
+.container-item:nth-child(1) .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 32px;
+  margin-right: 152px;
+  margin-bottom: 86px;
+}
+
+.container-item:nth-child(1) .left-side a svg, .container-item:nth-child(1) .left-side a path {
+  -webkit-transition: fill, -webkit-transform 0.3s ease;
+  transition: fill, -webkit-transform 0.3s ease;
+  transition: fill, transform 0.3s ease;
+  transition: fill, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.container-item:nth-child(1) .left-side a:hover svg, .container-item:nth-child(1) .left-side a:hover path {
+  fill: #385CEB;
+  -webkit-transform: translate(5%, -5%);
+          transform: translate(5%, -5%);
 }
 
 .container-item:nth-child(2) {
@@ -832,8 +873,8 @@ h6 {
 }
 
 .bg-hero .svg-hero {
-  -webkit-box-shadow: inset 0 0 200px #0D0C0C;
-          box-shadow: inset 0 0 200px #0D0C0C;
+  -webkit-box-shadow: inset 0 0 200px #1A1B1F;
+          box-shadow: inset 0 0 200px #1A1B1F;
 }
 
 .container-square {
@@ -860,7 +901,7 @@ h6 {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   border-radius: 4px;
-  background: linear-gradient(221.6deg, #DA2A2A -8.45%, #EE4747 -8.44%, rgba(196, 22, 22, 0.28) 76.17%);
+  background: linear-gradient(221.6deg, #385CEB -8.44%, rgba(56, 92, 235, 0.28) 76.17%);
   -webkit-transform: translate(-12%, -26%) rotate(25.02deg);
           transform: translate(-12%, -26%) rotate(25.02deg);
 }
@@ -927,7 +968,7 @@ h6 {
 
 .line-gray {
   border: 0;
-  border-bottom: 1px solid #171616;
+  border-bottom: 1px solid #3E3F42;
 }
 
 .get {
@@ -983,7 +1024,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #0D0C0C;
+  background-color: #2B2C30;
 }
 
 @media screen and (max-width: 960px) {
