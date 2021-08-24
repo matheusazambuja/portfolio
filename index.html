@@ -19,13 +19,13 @@
   <header class="menu">
     <div class="menu-left">
       <a href="#home" class="link menu-1">HOME</a>
-      <a href="#home" class="link menu-2">ABOUT</a>
+      <a href="#section-01" class="link menu-4">WORKS</a>
     </div>
     <div class="menu-logo menu-3">
       <h5>Matheus.</h5>
     </div>
     <div class="menu-right">
-      <a href="#section-01" class="link menu-4">WORKS</a>
+      <a href="#about" class="link menu-2">ABOUT</a>
     </div>
   </header>
 
@@ -258,9 +258,9 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      let tl = gsap.timeline();
+      let timeline = gsap.timeline();
 
-      tl
+      timeline
         .from(".menu-1", {
           duration: 1,
           y: 50,
