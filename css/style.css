@@ -120,6 +120,27 @@ h6 {
   font-size: 24px;
 }
 
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 54px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 72px;
@@ -800,7 +821,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px 0;
+  margin-top: 96px;
 }
 
 .container-item:nth-child(1) .left-side {
@@ -827,6 +848,19 @@ h6 {
   fill: #385CEB;
   -webkit-transform: translate(5%, -5%);
           transform: translate(5%, -5%);
+}
+
+.container-item:nth-child(1) .right-side .skill-1 {
+  margin-top: 72px;
+}
+
+.container-item:nth-child(1) .right-side .skill-2 {
+  margin-top: 8px;
+}
+
+.container-item:nth-child(1) .right-side .container-square {
+  margin-top: 64px;
+  margin-right: 148px;
 }
 
 .container-item:nth-child(2) {
@@ -978,6 +1012,38 @@ h6 {
 }
 
 @media screen and (max-width: 1400px) {
+  .container-item:nth-child(1) .left-side {
+    row-gap: 16px;
+    margin-right: 96px;
+    margin-left: 32px;
+  }
+  .container-item:nth-child(1) .left-side svg {
+    width: 24px;
+    height: 24px;
+  }
+  .container-item:nth-child(1) .right-side .skill-1 {
+    margin-top: 48px;
+  }
+  .container-item:nth-child(1) .right-side .skill-2 {
+    margin-top: 8px;
+  }
+  .container-item:nth-child(1) .right-side .container-square {
+    margin-top: 32px;
+    margin-right: 108px;
+  }
+  .container-item:nth-child(1) .container-square .square {
+    font-size: 20px;
+  }
+  .container-item:nth-child(1) .container-square .square:hover::after {
+    -webkit-transform: translate(-1%, -18%) rotate(130deg);
+            transform: translate(-1%, -18%) rotate(130deg);
+  }
+  .container-item:nth-child(1) .container-square .square::after {
+    width: 96px;
+    height: 96px;
+    -webkit-transform: translate(-1%, -18%) rotate(27deg);
+            transform: translate(-1%, -18%) rotate(27deg);
+  }
   .svg-hero {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
