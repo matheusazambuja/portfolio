@@ -17,7 +17,7 @@
   color: #3E3E40;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, input {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
 }
@@ -844,14 +844,53 @@ h6 {
   margin-bottom: 86px;
 }
 
-.container-item:nth-child(1) .left-side a svg, .container-item:nth-child(1) .left-side a path {
+.container-item:nth-child(1) .left-side button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.container-item:nth-child(1) .left-side button #myEmail {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.container-item:nth-child(1) .left-side button:hover.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container-item:nth-child(1) .left-side a svg, .container-item:nth-child(1) .left-side a path, .container-item:nth-child(1) .left-side button svg, .container-item:nth-child(1) .left-side button path {
   -webkit-transition: fill, -webkit-transform 0.3s ease;
   transition: fill, -webkit-transform 0.3s ease;
   transition: fill, transform 0.3s ease;
   transition: fill, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.container-item:nth-child(1) .left-side a:hover svg, .container-item:nth-child(1) .left-side a:hover path {
+.container-item:nth-child(1) .left-side a:hover.email, .container-item:nth-child(1) .left-side button:hover.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container-item:nth-child(1) .left-side a:hover svg, .container-item:nth-child(1) .left-side a:hover path, .container-item:nth-child(1) .left-side button:hover svg, .container-item:nth-child(1) .left-side button:hover path {
   fill: #385CEB;
   -webkit-transform: translate(5%, -5%);
           transform: translate(5%, -5%);

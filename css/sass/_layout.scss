@@ -54,13 +54,81 @@
     margin-right: 152px;
     margin-bottom: 86px;
 
-    a {
+    button {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+
+      #myEmail {
+        display: none;
+
+        opacity: 0;
+
+        transition: opacity 0.2s ease;
+      }
+
+      &:hover {
+        &.email {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          position: relative;
+
+          // #myEmail {
+          //   display: block;
+          //   opacity: 1;
+
+          //   position: absolute;
+          //   left: 40px;
+
+          //   border: 0;
+
+          //   width: fit-content;
+
+          //   background-color: transparent;
+          //   color: $white-normal;
+          //   font-size: 18px;
+    
+          //   padding: 12px;
+          // }
+        }
+      }
+    }
+
+    a, button {
 
       svg, path {
         transition: fill, transform 0.3s ease;
       }
-      
+
       &:hover {
+        &.email {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          position: relative;
+
+          // #myEmail {
+          //   display: block;
+          //   opacity: 1;
+
+          //   position: absolute;
+          //   left: 40px;
+
+          //   border: 0;
+
+          //   width: fit-content;
+
+          //   background-color: transparent;
+          //   color: $white-normal;
+          //   font-size: 18px;
+    
+          //   padding: 12px;
+          // }
+        }
+
         svg, path {
           fill: $blue-light;
 
