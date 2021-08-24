@@ -1017,6 +1017,10 @@ h6 {
   padding: 16px 24px;
 }
 
+#about h5 {
+  margin-top: 64px;
+}
+
 @media screen and (max-width: 1400px) {
   .container-item:nth-child(1) .left-side {
     row-gap: 16px;
