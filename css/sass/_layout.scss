@@ -9,8 +9,10 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-
-  padding: 48px 16px;
+  
+  padding: 30px 16px;
+  background: #17181a47;
+  backdrop-filter: blur(2px);
 
   .menu-logo {
     color: $white-light;
@@ -259,6 +261,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  a + .img-project {
+    opacity: 0;
+    transition: all 1.2s ease;
+  }
 
   a:hover {
     & + .img-project {
