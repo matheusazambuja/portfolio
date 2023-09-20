@@ -1,4 +1,11 @@
-h1, h2, h3, h4, h5, h6, p, input {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
 }
@@ -22,7 +29,7 @@ p {
 
   position: relative;
 
-  transition: .5s ease;
+  transition: 0.5s ease;
 
   &::after {
     content: '';
@@ -33,17 +40,17 @@ p {
     left: 0;
 
     width: 0%;
-    height: 2px;
+    height: 1px;
 
     background-color: $white-normal;
 
     transform: translateX(22%);
 
-    transition: .5s ease;
+    transition: 0.5s ease;
   }
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
 
     &::after {
       width: 70%;
@@ -65,7 +72,7 @@ h2 {
 
 h3 {
   color: $white-normal;
-  font-size: 54px; 
+  font-size: 54px;
   line-height: 110%;
 }
 
@@ -88,7 +95,7 @@ h6 {
 }
 
 .mask {
-  background: linear-gradient(180deg, #274AD7 0%, rgba(56, 92, 235, 0.99) 100%);
+  background: linear-gradient(180deg, #274ad7 0%, rgba(56, 92, 235, 0.99) 100%);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,19 +121,19 @@ h6 {
   h2 {
     font-size: 54px;
   }
-  
+
   h3 {
-    font-size: 32px; 
+    font-size: 32px;
   }
-  
+
   h4 {
     font-size: 24px;
   }
-  
+
   h5 {
     font-size: 18px;
   }
-  
+
   h6 {
     font-size: 16px;
   }

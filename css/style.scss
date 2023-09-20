@@ -14,25 +14,16 @@ html {
 }
 
 body {
-  width: 100%;
-
   background-color: $black-normal;
 }
 
 @media screen and (max-width: 960px) {
   .menu {
-
-    .menu-logo {
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-
     .menu-left {
       display: none;
     }
-  
-    .menu-right {
+
+    .menu-list {
       display: none;
     }
   }

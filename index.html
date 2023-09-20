@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matheus Azambuja | Front-end Developer</title>
+  <title>Portfólio | Matheus Azambuja</title>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,22 +15,28 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- Header -->
   <header class="menu">
-    <div class="menu-left">
-      <a href="#home" class="link menu-1">HOME</a>
-      <a href="#section-01" class="link menu-4">WORKS</a>
-    </div>
-    <div class="menu-logo menu-3">
-      <h5>Matheus.</h5>
-    </div>
-    <div class="menu-right">
-      <a href="#about" class="link menu-2">ABOUT</a>
-    </div>
+    <nav class="menu-nav">
+      <div class="menu-left">
+        <h5>Matheus Azambuja</h5>
+      </div>
+      <ul class="menu-list">
+        <li>
+          <a href="#home" class="link menu-1">Início</a>
+        </li>
+        <li>
+          <a href="#about" class="link menu-2">Quem sou</a>
+        </li>
+        <li>
+          <a href="#section-01" class="link menu-4">Projetos</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- BACKGROUND GERO -->
-  <div class="relative">
+  <!-- <div class="relative">
 
     <div class="bg-hero">
       <svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,9 +155,9 @@
       </svg>
     </div>
 
-  </div>
+  </div> -->
 
-  <!-- HOME -->
+  <!-- Home -->
   <section class="container hero" id="home">
     <div class="container-item">
       <div class="left-side">
@@ -203,13 +209,16 @@
       </div>
     </div>
 
-    <!-- <div class="container-item">
-      <img src="img/01.jpg" alt="Foto de Matheus Azambuja">
-    </div> -->
-
   </section>
 
-  <!-- SELECTED WORKS -->
+  <!-- About -->
+  <section id="about" class="get mt-9 mb-5" id="section-02">
+    <h2>About</h2>
+
+    <h5>About in development</h3>
+  </section>
+
+  <!-- Projects -->
   <section class="list" id="section-01">
     <div class="list-item">
       <h2>Selected Works</h2>
@@ -243,14 +252,8 @@
     </div>
   </section>
 
-  <section id="about" class="get mt-9 mb-5" id="section-02">
-    <h2>About</h2>
-
-    <h5>About in development</h3>
-  </section>
-
-  <script src="/js/getEmail.js"></script>
-
+  <!-- <script src="/js/getEmail.js"></script> -->
+<!-- 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
     integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -272,12 +275,6 @@
           ease: "power3.out"
         })
         .from(".menu-2", {
-          duration: 1,
-          y: 50,
-          opacity: 0,
-          ease: "power3.out"
-        }, "-=0.8")
-        .from(".menu-3", {
           duration: 1,
           y: 50,
           opacity: 0,
@@ -332,7 +329,7 @@
         }
       });
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
