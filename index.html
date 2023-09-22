@@ -16,257 +16,265 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="menu">
-      <nav>
-        <div class="menu__logo">
-          <h5>Matheus Azambuja</h5>
+    <main>
+      <!-- Header -->
+      <header class="menu">
+        <div class="grid-layout">
+          <nav>
+            <div class="menu__logo">
+              <h5>Matheus Azambuja</h5>
+            </div>
+            <ul class="menu__list">
+              <li>
+                <a href="#home" class="menu__link menu-1">Início</a>
+              </li>
+              <li>
+                <a href="#about" class="menu__link menu-2">Sobre</a>
+              </li>
+              <li>
+                <a href="#projects" class="menu__link menu-4">Projetos</a>
+              </li>
+              <li>
+                <a href="#knowledges" class="menu__link menu-4"
+                  >Conhecimentos</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-        <ul class="menu__list">
-          <li>
-            <a href="#home" class="menu__link menu-1">Início</a>
-          </li>
-          <li>
-            <a href="#about" class="menu__link menu-2">Sobre</a>
-          </li>
-          <li>
-            <a href="#projects" class="menu__link menu-4">Projetos</a>
-          </li>
-          <li>
-            <a href="#knowledges" class="menu__link menu-4">Conhecimentos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      </header>
 
-    <!-- Home -->
-    <section class="home" id="home">
-      <div class="home__content">
-        <h1 class="home__title text-center">Matheus Azambuja</h1>
-        <h2 class="home__subtitle">Desenvolvedor Front-end e Web Designer</h2>
-        <div class="home__actions">
-          <button id="btn-projects" class="primary-button">
-            <a href="#projects">Projetos</a>
-          </button>
-          <button id="btn-knowledges" class="primary-button">
-            <a href="#knowledges">Conhecimentos</a>
-          </button>
+      <!-- Home -->
+      <section id="home" class="home bg-hero">
+        <div class="grid-layout">
+          <div class="home__content">
+            <h1 class="home__title text-center">Matheus Azambuja</h1>
+            <h2 class="home__subtitle">
+              Desenvolvedor Front-end e Web Designer
+            </h2>
+            <div class="home__actions">
+              <button id="btn-projects" class="primary-button">
+                <a href="#projects">Projetos</a>
+              </button>
+              <button id="btn-knowledges" class="primary-button">
+                <a href="#knowledges">Conhecimentos</a>
+              </button>
+            </div>
+          </div>
+
+          <a href="#about" class="home__arrow-down">
+            <img src="/img/svg/chevron-down-solid.svg" alt="Arrow down" />
+          </a>
         </div>
-      </div>
+      </section>
 
-      <a href="#about" class="home__arrow-down">
-        <img src="/img/svg/chevron-down-solid.svg" alt="Arrow down" />
-      </a>
-    </section>
+      <!-- About -->
+      <section id="about" class="about bg-hero">
+        <div class="grid-layout">
+          <h3 class="about__title">Sobre</h3>
+          <h4 class="about__subtitle">Um pouco sobre mim</h4>
 
-    <!-- About -->
-    <section id="about" class="about">
-      <h2 class="about__title">Sobre</h2>
-      <h3 class="about__subtitle">Um pouco sobre mim</h3>
+          <div class="about__card">
+            <div class="about__image">
+              <img
+                src="/img/dev-photo.jpeg"
+                alt="Matheus Azambuja photo"
+                class="card__photo"
+              />
 
-      <div class="about__card">
-        <img
-          src="/img/dev-photo.jpeg"
-          alt="Matheus Azambuja photo"
-          class="card__photo"
-        />
-        <div class="card__content">
-          <h6 class="card__subtitle">Quem sou</h6>
-          <h4 class="card__title">Matheus Azambuja</h4>
-          <h6 class="card__skills">Desenvolver Front-end | Web Designer</h6>
-          <p class="card__text">
-            Profissionalmente ativo na área a 2 anos como desenvolvedor
-            front-end. Nesse tempo, obtevi muitos aprendizados valiosissímos em
-            desenvolvimento de sistemas web para empresas de grande porte,
-            criação de landing pages e conhecimentos para agregar o máximo de
-            valor para os clientes.
-          </p>
-          <p class="card__text">
-            Atualmente atuo como desenvolvedor web na ilegra, uma empresa de
-            consultoria que presta serviços para grandes empresas como Thomson
-            Reuters e SBT, por exemplo.
-          </p>
-          <div class="card__contacts">
-            <img
-              src="/img/svg/icon-linkedin.svg"
-              alt="Icon Linkedin"
-              class="card__icon"
-            />
-            <img
-              src="/img/svg/icon-github.svg"
-              alt="Icon GitHub"
-              class="card__icon"
-            />
-            <img
-              src="/img/svg/icon-email.svg"
-              alt="Icon Email"
-              class="card__icon"
-            />
-            <img
-              src="/img/svg/icon-whatsapp.svg"
-              alt="Icon WhatsApp"
-              class="card__icon"
-            />
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+            </div>
+            <div class="card__content">
+              <h6 class="card__subtitle">Quem sou</h6>
+              <h4 class="card__title">Matheus Azambuja</h4>
+              <h6 class="card__skills">Desenvolver Front-end | Web Designer</h6>
+              <p class="card__text">
+                Profissionalmente ativo na área a 2 anos como desenvolvedor
+                front-end. Nesse tempo, obtevi muitos aprendizados valiosissímos
+                em desenvolvimento de sistemas web para empresas de grande
+                porte, criação de landing pages e conhecimentos para agregar o
+                máximo de valor para os clientes.
+              </p>
+              <p class="card__text">
+                Atualmente atuo como desenvolvedor web na ilegra, uma empresa de
+                consultoria que presta serviços para grandes empresas como
+                Thomson Reuters e SBT, por exemplo.
+              </p>
+              <div class="card__contacts">
+                <img
+                  src="/img/svg/icon-linkedin.svg"
+                  alt="Icon Linkedin"
+                  class="card__icon"
+                />
+                <img
+                  src="/img/svg/icon-github.svg"
+                  alt="Icon GitHub"
+                  class="card__icon"
+                />
+                <img
+                  src="/img/svg/icon-email.svg"
+                  alt="Icon Email"
+                  class="card__icon"
+                />
+                <img
+                  src="/img/svg/icon-whatsapp.svg"
+                  alt="Icon WhatsApp"
+                  class="card__icon"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2 class="projects__title">Projetos</h2>
-      <h3 class="projects__subtitle">Trabalhos desenvolvidos</h3>
-      <div class="projects__items">
-        <div class="item__card">
-          <img
-            src="img/karagame.png"
-            class="item__image"
-            alt="Project KaraGame"
-          />
-          <div class="item__info">
-            <h3 class="item__title">KaraGame</h3>
-            <button class="item__access">
+      <!-- Projects -->
+      <section id="projects" class="projects bg-hero">
+        <div class="grid-layout">
+          <h3 class="projects__title">Projetos</h3>
+          <h4 class="projects__subtitle">Trabalhos desenvolvidos</h4>
+          <div class="projects__items">
+            <div class="item__card">
+              <img
+                src="img/karagame.png"
+                class="item__image"
+                alt="Project KaraGame"
+              />
               <a
                 href="https://kara-game.vercel.app/"
                 target="_blank"
                 class="item__link"
               >
-                Clique para acessar
+                Karagame
               </a>
-            </button>
-          </div>
-        </div>
-        <div class="cards__item">
-          <img
-            src="img/letmeask.png"
-            class="item__image"
-            alt="Project LetMetAsk"
-          />
-
-          <div class="item__info">
-            <h3 class="item__title">LetMeAsk</h3>
-            <button class="item__access">
+            </div>
+            <div class="item__card">
+              <img
+                src="img/letmeask.png"
+                class="item__image"
+                alt="Project LetMetAsk"
+              />
               <a
                 href="https://letmeask-nu-five.vercel.app/"
                 target="_blank"
                 class="item__link"
-                >Clique para acessar</a
+                >LetMeAsk</a
               >
-            </button>
-          </div>
-        </div>
-        <div class="cards__item">
-          <img
-            src="img/podcastr.png"
-            class="item__image"
-            alt="Project Podcastr"
-          />
-          <div class="item__info">
-            <h3 class="item__title">Podcastr</h3>
-            <button class="item__access">
+            </div>
+            <div class="item__card">
+              <img
+                src="img/podcastr.png"
+                class="item__image"
+                alt="Project Podcastr"
+              />
               <a
                 href="https://podcastr-rosy.vercel.app/"
                 target="_blank"
                 class="item__link"
               >
-                Clique para acessar
+                Podcastr
               </a>
-            </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Knowledges -->
-    <section class="knowledges" id="knowledges">
-      <h2 class="knowledges__title">Conhecimentos</h2>
-      <h3 class="knowledges__subtitle">Habilidades</h3>
+      <!-- Knowledges -->
+      <section id="knowledges" class="knowledges bg-hero">
+        <div class="grid-layout">
+          <h3 class="knowledges__title">Conhecimentos</h3>
+          <h4 class="knowledges__subtitle">Habilidades</h4>
 
-      <div class="knowledges__skills">
-        <span class="skills__text"
-          >Passe o mouse para entender um pouco sobre cada tecnologia</span
-        >
-        <div class="skills__items">
-          <div class="skills__item">
-            <h6 class="item__title">HTML5</h6>
-            <img
-              src="/img/svg/icon-html.svg"
-              alt="HTML5 icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">CSS3</h6>
-            <img
-              src="/img/svg/icon-css.svg"
-              alt="CSS3 icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">Javascript</h6>
-            <img
-              src="/img/svg/icon-js.svg"
-              alt="Javascript icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">Angular2+</h6>
-            <img
-              src="/img/svg/icon-angular.svg"
-              alt="Angular2 icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">Typescript</h6>
-            <img
-              src="/img/svg/icon-typescript.svg"
-              alt="Typescript icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">RxJS</h6>
-            <img
-              src="/img/svg/icon-rxjs.svg"
-              alt="RxJS icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">Sass</h6>
-            <img
-              src="/img/svg/icon-sass.svg"
-              alt="Sass icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">Jest</h6>
-            <img
-              src="/img/svg/icon-jest.svg"
-              alt="Jest icon"
-              class="item__icon"
-            />
-          </div>
-          <div class="skills__item">
-            <h6 class="item__title">Testing Library</h6>
-            <img
-              src="/img/svg/icon-testing-library.svg"
-              alt="Testing Library icon"
-            />
+          <div class="knowledges__skills">
+            <span class="skills__text"
+              >Passe o mouse para entender um pouco sobre cada tecnologia</span
+            >
+            <div class="skills__items">
+              <div class="skills__item">
+                <h6 class="item__title">HTML5</h6>
+                <img
+                  src="/img/svg/icon-html.svg"
+                  alt="HTML5 icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">CSS3</h6>
+                <img
+                  src="/img/svg/icon-css.svg"
+                  alt="CSS3 icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">Javascript</h6>
+                <img
+                  src="/img/svg/icon-js.svg"
+                  alt="Javascript icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">Angular2+</h6>
+                <img
+                  src="/img/svg/icon-angular.svg"
+                  alt="Angular2 icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">Typescript</h6>
+                <img
+                  src="/img/svg/icon-typescript.svg"
+                  alt="Typescript icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">RxJS</h6>
+                <img
+                  src="/img/svg/icon-rxjs.svg"
+                  alt="RxJS icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">Sass</h6>
+                <img
+                  src="/img/svg/icon-sass.svg"
+                  alt="Sass icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">Jest</h6>
+                <img
+                  src="/img/svg/icon-jest.svg"
+                  alt="Jest icon"
+                  class="item__icon"
+                />
+              </div>
+              <div class="skills__item">
+                <h6 class="item__title">Testing Library</h6>
+                <img
+                  src="/img/svg/icon-testing-library.svg"
+                  alt="Testing Library icon"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer">
-      Copyright © 2021
-      <strong class="footer__author">Matheus Azambuja.</strong> Todos os
-      direitos reservados.
-    </footer>
+      <!-- Footer -->
+      <footer class="footer bg-hero">
+        <div class="grid-layout">
+          Copyright © 2021
+          <strong class="footer__author">Matheus Azambuja.</strong> Todos os
+          direitos reservados.
+        </div>
+      </footer>
+    </main>
 
     <!-- <script src="/js/getEmail.js"></script> -->
     <!-- 

@@ -62,19 +62,19 @@ p {
 
 h1 {
   color: $white-light1;
-  font-size: 96px;
+  font-size: 72px;
   line-height: 100%;
 }
 
 h2 {
   color: $white-normal;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 110%;
 }
 
 h3 {
   color: $white-normal;
-  font-size: 54px;
+  font-size: 40px;
   line-height: 110%;
 }
 
@@ -86,13 +86,13 @@ h4 {
 
 h5 {
   color: $white-dark;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 130%;
 }
 
 h6 {
   color: $white-dark;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -113,67 +113,4 @@ h6 {
 
 .circle {
   font-size: 24px;
-}
-
-@media screen and (max-width: 1400px) {
-  h1 {
-    font-size: 72px;
-  }
-
-  h2 {
-    font-size: 54px;
-  }
-
-  h3 {
-    font-size: 32px;
-  }
-
-  h4 {
-    font-size: 24px;
-  }
-
-  h5 {
-    font-size: 18px;
-  }
-
-  h6 {
-    font-size: 16px;
-  }
-
-  .link {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  h1 {
-    font-size: 72px;
-  }
-
-  h2 {
-    font-size: 54px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    text-align: center;
-    font-size: 54px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  h5 {
-    font-size: 18px;
-  }
-
-  .square {
-    font-size: 18px;
-  }
 }

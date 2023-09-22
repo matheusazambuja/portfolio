@@ -9,13 +9,11 @@
   width: 100%;
   padding: $spacing-10x $spacing-15x;
   background-color: $black-dark-menu;
+  backdrop-filter: blur(2px);
 
   nav {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__logo {
   }
 
   &__list {
@@ -31,11 +29,12 @@
 
 // Home section
 .home {
-  position: relative;
   min-height: 100vh !important;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 124px 48px;
 
   &__content {
     display: flex;
@@ -65,31 +64,10 @@
   }
 }
 
-.bg-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: -1;
-
-  width: 100%;
-  height: 100vh;
-
-  overflow: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .svg-hero {
-    box-shadow: inset 0 0 200px $black-dark;
-  }
-}
-
 // About section
 .about {
   min-height: 100vh;
-  margin-top: $spacing-15x;
+  padding: 124px 48px;
 
   &__title {
     color: $white-normal;
@@ -108,6 +86,45 @@
     background-color: $black-normal;
     padding: $spacing-11x $spacing-14x;
     margin-top: $spacing-13x;
+  }
+
+  &__image {
+    position: relative;
+    height: 200px;
+
+    .circle-1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: -3px;
+      left: -3px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: $white-dark $white-dark $white-dark transparent;
+      border-radius: 50%;
+      transition: all 1.5s ease-in-out;
+    }
+
+    .circle-2 {
+      @extend .circle-1;
+      width: 206px;
+      height: 206px;
+      top: -6px;
+      left: -6px;
+      border-color: $white-dark transparent $white-dark $white-dark;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .circle-1 {
+        transform: rotate(360deg);
+      }
+
+      .circle-2 {
+        transform: rotate(-360deg);
+      }
+    }
   }
 
   .card {
@@ -160,6 +177,13 @@
       padding: $spacing-2x;
       width: 36px;
       height: 36px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px 0 #00000042;
+      }
     }
   }
 }
@@ -167,6 +191,7 @@
 // Projects section
 .projects {
   min-height: 100vh;
+  padding: 124px 48px;
 
   &__title {
     color: $white-normal;
@@ -185,12 +210,45 @@
 
   .item {
     &__card {
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+
+        .item__image {
+          transform: scale(1.05);
+          filter: blur(1.4px) brightness(40%);
+        }
+
+        .item__link {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &__link {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-size: 32px;
+      opacity: 0;
+      transition: all 0.3 ease-in-out;
+      visibility: hidden;
+    }
+
+    &__title {
+      color: $white-light1;
     }
 
     &__image {
+      width: 100%;
       height: 184px;
       border-radius: 4px;
       border-bottom: 3px solid $blue-light;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
@@ -198,6 +256,7 @@
 // Knowledges section
 .knowledges {
   min-height: 100vh;
+  padding: 124px 48px;
 
   &__title {
     color: $white-normal;
@@ -217,15 +276,14 @@
   .skills {
     &__text {
       color: $gray-light;
-      font-size: 32px;
+      font-size: 20px;
       margin-top: $spacing-16x;
     }
 
     &__items {
       display: flex;
       flex-wrap: wrap;
-      gap: $spacing-10x;
-      row-gap: $spacing-7x;
+      gap: $spacing-8x;
       max-width: 60%;
     }
 
@@ -234,20 +292,32 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: $spacing-2x;
-      text-align: center;
+      gap: $spacing-3x;
       padding: 0 $spacing-2x;
 
-      width: 126px;
-      height: 132px;
+      width: 120px;
+      height: 120px;
+      box-shadow: 6px 6px 20px 0 #00000042;
       border: 1px solid $black-light;
       border-radius: 4px;
+      text-align: center;
+      transition: all 1s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
+        transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+
+      &:hover {
+        border: 1px solid $blue-light;
+
+        .item__title {
+          color: $white-light3;
+        }
+      }
     }
   }
 
   .item {
     &__title {
       line-height: 100%;
+      transition: color 0.3s ease-in-out;
     }
 
     &__icon {
@@ -260,102 +330,15 @@
 // Footer
 .footer {
   color: $white-normal;
-  font-size: 32px;
+  font-size: 16px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 150%;
   text-align: center;
 
   padding: $spacing-12x;
 
   &__author {
     color: $blue-normal;
-  }
-}
-
-// MEDIA QUERIES
-@media screen and (max-width: 1400px) {
-  .container-item:nth-child(1) {
-    .left-side {
-      row-gap: 16px;
-
-      margin-right: 96px;
-      margin-left: 32px;
-
-      svg {
-        width: 24px;
-        height: 24px;
-      }
-    }
-
-    .right-side {
-      .skill-1 {
-        margin-top: 48px;
-      }
-
-      .skill-2 {
-        margin-top: 8px;
-      }
-
-      .container-square {
-        margin-top: 32px;
-        margin-right: 108px;
-      }
-    }
-
-    .container-square {
-      .square {
-        font-size: 20px;
-
-        &:hover {
-          &::after {
-            transform: translate(-1%, -18%) rotate(130deg);
-          }
-        }
-
-        &::after {
-          width: 96px;
-          height: 96px;
-
-          transform: translate(-1%, -18%) rotate(27deg);
-        }
-      }
-    }
-  }
-
-  .svg-hero {
-    transform: scale(1.1);
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .hero {
-    height: auto;
-  }
-
-  .container {
-    flex-direction: column;
-    margin-left: 16px;
-  }
-
-  .bg-hero {
-    .svg-hero {
-      transform: scale(2) rotate(20deg);
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #section-01 {
-    margin-top: 150px;
-  }
-
-  .circle {
-    justify-content: center;
-
-    transform: translate(50%, -26%);
-    &::after {
-      transform: translate(-12%, -26%) rotate(-119.91deg);
-    }
   }
 }
