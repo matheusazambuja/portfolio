@@ -17,21 +17,10 @@ $blue-normal: #274ad7;
 $blue-dark: #1c3ec7;
 $blue-light: #385ceb;
 
-$gray-1: #5d5e61;
-$gray-2: #4d4e51;
-$gray-3: #3e3e40;
-
-.color-gray-1 {
-  color: $gray-1;
-}
-
-.color-gray-2 {
-  color: $gray-2;
-}
-
-.color-gray-3 {
-  color: $gray-3;
-}
+$gray-light: #a0a0a0;
+$gray-normal: #5d5e61;
+$gray-dark1: #4d4e51;
+$gray-dark2: #3e3e40;
 
 // Spacing (Paddings and margins)
 $spacing-x: 4px; // 4px

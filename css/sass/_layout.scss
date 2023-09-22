@@ -1,4 +1,6 @@
-// HEADER
+// Refatorar classes dos títulos e subtítulos
+
+// Header
 .menu {
   position: fixed;
   top: 0;
@@ -27,7 +29,7 @@
   }
 }
 
-// HOME SECTION
+// Home section
 .home {
   position: relative;
   min-height: 100vh !important;
@@ -63,10 +65,6 @@
   }
 }
 
-.hero {
-  height: 100vh;
-}
-
 .bg-hero {
   position: absolute;
   top: 0;
@@ -88,143 +86,192 @@
   }
 }
 
-.container-square {
-  z-index: 1;
+// About section
+.about {
+  min-height: 100vh;
+  margin-top: $spacing-15x;
 
-  .square {
-    display: inline-block;
-    margin-top: 64px;
+  &__title {
+    color: $white-normal;
+  }
 
-    font-size: 24px;
+  &__subtitle {
+    color: $white-dark;
+    margin-top: $spacing-2x;
+  }
 
-    padding: 16px 24px;
+  &__card {
+    display: flex;
 
-    position: relative;
+    border: 2px solid $black-light;
+    border-radius: 4px;
+    background-color: $black-normal;
+    padding: $spacing-11x $spacing-14x;
+    margin-top: $spacing-13x;
+  }
 
-    &::after {
-      content: '';
-      display: block;
-
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      z-index: -1;
-
-      width: 140px;
-      height: 140px;
-
-      transition: 0.5s ease;
-
-      border-radius: 4px;
-
-      background: linear-gradient(
-        221.6deg,
-        #385ceb -8.44%,
-        rgba(56, 92, 235, 0.28) 76.17%
-      );
-      transform: translate(-12%, -26%) rotate(25.02deg);
+  .card {
+    &__photo {
+      border-radius: 50%;
+      width: 194px;
+      height: 194px;
     }
 
-    &:hover {
-      &::after {
-        transform: translate(-11%, -25%) rotate(130deg);
+    &__content {
+      margin-left: $spacing-11x;
+      margin-top: $spacing-6x;
+    }
+
+    &__subtitle {
+      color: $blue-light;
+    }
+
+    &__title {
+      margin-top: $spacing-4x;
+      color: $white-light1;
+    }
+
+    &__skills {
+      margin-top: $spacing-2x;
+      color: $white-normal;
+    }
+
+    &__text {
+      color: $gray-light;
+
+      &:first-child {
+        margin-top: $spacing-8x;
+      }
+
+      &:not(:first-child) {
+        margin-top: $spacing-3x;
       }
     }
-  }
-}
 
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+    &__contacts {
+      margin-top: $spacing-11x;
+      display: flex;
+      gap: $spacing-5x;
+    }
 
-// SELECTED WORKS
-.list {
-  margin-top: 250px;
-  padding-top: 150px;
-}
-
-.list-item {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px 24px;
-
-  position: relative;
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  a + .img-project {
-    opacity: 0;
-    transition: all 1.2s ease;
-  }
-
-  a:hover {
-    & + .img-project {
-      opacity: 1;
-      transform: translate(-35%, -50%) translate3d(100px, 0, 0);
+    &__icon {
+      border: 1px solid $gray-normal;
+      border-radius: 4px;
+      padding: $spacing-2x;
+      width: 36px;
+      height: 36px;
     }
   }
 }
 
-.img-project {
-  max-width: 620px;
-  border-radius: 4px;
+// Projects section
+.projects {
+  min-height: 100vh;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  &__title {
+    color: $white-normal;
+  }
 
-  z-index: -1;
+  &__subtitle {
+    color: $white-dark;
+    margin-top: $spacing-2x;
+  }
 
-  opacity: 0;
-  transform: translate(-35%, -50%) translate3d(-2000px, 0, 0) skew(60deg);
+  &__items {
+    display: flex;
+    gap: $spacing-8x;
+    margin-top: $spacing-15x;
+  }
 
-  transition: transform 1s ease;
-}
+  .item {
+    &__card {
+    }
 
-.line-gray {
-  border: 0;
-  border-bottom: 1px solid $black-light;
-}
-
-.get {
-  max-width: 1200px;
-
-  margin: 0 auto;
-  padding: 16px 24px;
-}
-
-#about {
-  h5 {
-    margin-top: 64px;
+    &__image {
+      height: 184px;
+      border-radius: 4px;
+      border-bottom: 3px solid $blue-light;
+    }
   }
 }
 
-// ANIMATIONS
+// Knowledges section
+.knowledges {
+  min-height: 100vh;
 
-// #square2 {
-//   transform-origin: center center;
+  &__title {
+    color: $white-normal;
+  }
 
-//   transform-box: fill-box;
+  &__subtitle {
+    color: $white-dark;
+    margin-top: $spacing-2x;
+  }
 
-//   animation: rotate4 1s linear infinite alternate;
-//   animation-delay: 5s;
+  &__skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $spacing-5x;
+  }
 
-//   will-change: animation;
-// }
+  .skills {
+    &__text {
+      color: $gray-light;
+      font-size: 32px;
+      margin-top: $spacing-16x;
+    }
 
-// @keyframes rotate4 {
-//   0% {
-//     transform: rotate(0);
-//   }
-//   100% {
-//     transform: rotate(50deg);
-//   }
-// }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-10x;
+      row-gap: $spacing-7x;
+      max-width: 60%;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-2x;
+      text-align: center;
+      padding: 0 $spacing-2x;
+
+      width: 126px;
+      height: 132px;
+      border: 1px solid $black-light;
+      border-radius: 4px;
+    }
+  }
+
+  .item {
+    &__title {
+      line-height: 100%;
+    }
+
+    &__icon {
+      height: 40px;
+      max-width: 40px;
+    }
+  }
+}
+
+// Footer
+.footer {
+  color: $white-normal;
+  font-size: 32px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  line-height: 110%;
+  text-align: center;
+
+  padding: $spacing-12x;
+
+  &__author {
+    color: $blue-normal;
+  }
+}
 
 // MEDIA QUERIES
 @media screen and (max-width: 1400px) {

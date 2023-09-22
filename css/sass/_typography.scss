@@ -6,6 +6,7 @@ h5,
 h6,
 p,
 input,
+span,
 button {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
@@ -85,13 +86,13 @@ h4 {
 
 h5 {
   color: $white-dark;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 130%;
 }
 
 h6 {
   color: $white-dark;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 150%;
 }
 
