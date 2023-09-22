@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Matheus Azambuja</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Matheus Azambuja</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <!-- Header -->
+    <header class="menu">
+      <nav>
+        <div class="menu__logo">
+          <h5>Matheus Azambuja</h5>
+        </div>
+        <ul class="menu__list">
+          <li>
+            <a href="#home" class="menu__link menu-1">Início</a>
+          </li>
+          <li>
+            <a href="#about" class="menu__link menu-2">Sobre</a>
+          </li>
+          <li>
+            <a href="#projects" class="menu__link menu-4">Projetos</a>
+          </li>
+          <li>
+            <a href="#knowledges" class="menu__link menu-4">Conhecimentos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-
-  <!-- Header -->
-  <header class="menu">
-    <nav class="menu-nav">
-      <div class="menu-left">
-        <h5>Matheus Azambuja</h5>
-      </div>
-      <ul class="menu-list">
-        <li>
-          <a href="#home" class="link menu-1">Início</a>
-        </li>
-        <li>
-          <a href="#about" class="link menu-2">Quem sou</a>
-        </li>
-        <li>
-          <a href="#section-01" class="link menu-4">Projetos</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- BACKGROUND GERO -->
-  <!-- <div class="relative">
+    <!-- BACKGROUND GERO -->
+    <!-- <div class="relative">
 
     <div class="bg-hero">
       <svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,103 +161,183 @@
 
   </div> -->
 
-  <!-- Home -->
-  <section class="container hero" id="home">
-    <div class="container-item">
-      <div class="left-side">
-        <a href="https://www.linkedin.com/in/matheus-azambuja-9197411a1/">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="icon-linkedin">
-              <path id="Vector"
-                d="M9.30094 31.5H2.77031V10.4696H9.30094V31.5ZM6.03211 7.60081C3.94383 7.60081 2.25 5.87112 2.25 3.78284C2.25 2.77976 2.64847 1.81777 3.35775 1.10849C4.06704 0.399204 5.02903 0.000732422 6.03211 0.000732422C7.03519 0.000732422 7.99718 0.399204 8.70646 1.10849C9.41575 1.81777 9.81422 2.77976 9.81422 3.78284C9.81422 5.87112 8.11969 7.60081 6.03211 7.60081ZM33.743 31.5H27.2264V21.2625C27.2264 18.8227 27.1772 15.6938 23.831 15.6938C20.4356 15.6938 19.9153 18.3446 19.9153 21.0867V31.5H13.3917V10.4696H19.6552V13.3383H19.7466C20.6184 11.686 22.7482 9.94222 25.9256 9.94222C32.535 9.94222 33.75 14.2946 33.75 19.9477V31.5H33.743Z"
-                fill="#DCDEE6" />
-            </g>
-          </svg>
-        </a>
-
-        <button class="email" href="" onclick="getEmail()">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="icon-email">
-              <path id="Vector"
-                d="M30 6H6C4.35 6 3.015 7.35 3.015 9L3 27C3 28.65 4.35 30 6 30H30C31.65 30 33 28.65 33 27V9C33 7.35 31.65 6 30 6ZM30 12L18 19.5L6 12V9L18 16.5L30 9V12Z"
-                fill="#DCDEE6" />
-            </g>
-          </svg>
-          <span id="myEmail">matheusazambuja35@gmail.com</span>
-        </button>
-
-        <a href="https://www.facebook.com/matheus.azambuja.96/">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="icon-facebook">
-              <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
-                d="M26.2461 10.9167H22.9805H22.5946C21.5821 10.9167 20.7613 11.7375 20.7613 12.75V16.4178H26.2461L25.4428 21.9159H20.7613V32.0015H14.7298V21.9159H9.75V16.4178H14.6655L14.7298 11.199L14.7118 9.32855C14.6865 6.68727 16.8071 4.52559 19.4483 4.50023C19.4636 4.50008 19.4789 4.5 19.4943 4.5H26.2461V10.9167Z"
-                fill="#DCDEE6" />
-            </g>
-          </svg>
-        </a>
-      </div>
-      <div class="right-side">
-        <div>
-          <h1>Matheus Azambuja</h1>
-        </div>
-        <div>
-          <h2 class="mask skill-1 text-center">Web Developer</h2>
-        </div>
-        <div>
-          <h2 class="mask skill-2">Visual Design</h2>
-        </div>
-
-        <div class="container-square flex-end">
-          <a href="#section-01" class="square">WORKS</a>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home__content">
+        <h1 class="home__title text-center">Matheus Azambuja</h1>
+        <h2 class="home__subtitle">Desenvolvedor Front-end e Web Designer</h2>
+        <div class="home__actions">
+          <button id="btn-projects" class="primary-button">
+            <a href="#projects">Projetos</a>
+          </button>
+          <button id="btn-knowledges" class="primary-button">
+            <a href="#knowledges">Conhecimentos</a>
+          </button>
         </div>
       </div>
-    </div>
 
-  </section>
-
-  <!-- About -->
-  <section id="about" class="get mt-9 mb-5" id="section-02">
-    <h2>About</h2>
-
-    <h5>About in development</h3>
-  </section>
-
-  <!-- Projects -->
-  <section class="list" id="section-01">
-    <div class="list-item">
-      <h2>Selected Works</h2>
-    </div>
-    <div class="list-item py-6">
-      <h5 class="color-gray-2 mr-2">01.</h5>
-      <a href="https://kara-game.vercel.app/" target="_blank">
-        <h3>KaraGame</h3>
+      <a href="#about" class="home__arrow-down">
+        <img src="/img/svg/chevron-down-solid.svg" alt="Arrow down" />
       </a>
-      <img src="img/karagame.png" class="img-project" alt="Project KaraGame">
-    </div>
+    </section>
 
-    <hr class="line-gray">
+    <!-- About -->
+    <section id="about" class="about">
+      <h2 class="about__title">Sobre</h2>
+      <h3 class="about__subtitle">Um pouco sobre mim</h3>
 
-    <div class="list-item py-6">
-      <h5 class="color-gray-2 mr-2">02.</h5>
-      <a href="https://letmeask-nu-five.vercel.app/" target="_blank">
-        <h3>LetMeAsk</h3>
-      </a>
-      <img src="img/letmeask.png" class="img-project" alt="Project LetMetAsk">
-    </div>
+      <div class="about__card">
+        <div class="card__photo">
+          <img src="/img/dev-photo.jpeg" alt="Matheus Azambuja photo" />
+        </div>
+        <div class="card__content">
+          <h5 class="content__subtitle">Quem sou</h5>
+          <h4 class="content__title">Matheus Azambuja</h4>
+          <h3 class="content__skills">Desenvolver Front-end | Web Designer</h3>
+          <p class="content__text">
+            Profissionalmente ativo na área a 2 anos como desenvolvedor
+            front-end. Nesse tempo, obtevi muitos aprendizados valiosissímos em
+            desenvolvimento de sistemas web para empresas de grande porte,
+            criação de landing pages e conhecimentos para agregar o máximo de
+            valor para os clientes.
+          </p>
+          <p class="content__text">
+            Atualmente atuo como desenvolvedor web na ilegra, uma empresa de
+            consultoria que presta serviços para grandes empresas como Thomson
+            Reuters e SBT, por exemplo.
+          </p>
+          <div class="content__contacts">
+            <img src="/img/svg/icon-linkedin.svg" alt="Icon Linkedin" />
+            <img src="/img/svg/icon-github.svg" alt="Icon GitHub" />
+            <img src="/img/svg/icon-email.svg" alt="Icon Email" />
+            <img src="/img/svg/icon-email.svg" alt="Icon WhatsApp" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <hr class="line-gray">
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2 class="projects__title">Projetos</h2>
+      <h3 class="projects__subtitle">Trabalhos desenvolvidos</h3>
+      <div class="projects__cards">
+        <div class="cards__item">
+          <img
+            src="img/karagame.png"
+            class="item__image"
+            alt="Project KaraGame"
+          />
+          <div class="item__info">
+            <h3 class="item__title">KaraGame</h3>
+            <button class="item__access">
+              <a
+                href="https://kara-game.vercel.app/"
+                target="_blank"
+                class="item__link"
+              >
+                Clique para acessar
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="cards__item">
+          <img
+            src="img/letmeask.png"
+            class="item__image"
+            alt="Project LetMetAsk"
+          />
 
-    <div class="list-item py-6">
-      <h5 class="color-gray-2 mr-2">03.</h5>
-      <a href="https://podcastr-rosy.vercel.app/" target="_blank">
-        <h3>Podcastr</h3>
-      </a>
-      <img src="img/podcastr.png" class="img-project" alt="Project Podcastr">
-    </div>
-  </section>
+          <div class="item__info">
+            <h3 class="item__title">LetMeAsk</h3>
+            <button class="item__access">
+              <a
+                href="https://letmeask-nu-five.vercel.app/"
+                target="_blank"
+                class="item__link"
+                >Clique para acessar</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="cards__item">
+          <img
+            src="img/podcastr.png"
+            class="item__image"
+            alt="Project Podcastr"
+          />
+          <div class="item__info">
+            <h3 class="item__title">Podcastr</h3>
+            <button class="item__access">
+              <a
+                href="https://podcastr-rosy.vercel.app/"
+                target="_blank"
+                class="item__link"
+              >
+                Clique para acessar
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- <script src="/js/getEmail.js"></script> -->
-<!-- 
+    <section class="knowledges" id="knowledges">
+      <h2 class="knowledges__title">Conhecimentos</h2>
+      <h3 class="knowledges__subtitle">Habilidades</h3>
+
+      <div class="knowledges__skills">
+        <span class="skills__text">Passe o mouse para entender um pouco</span>
+        <div class="skills__cards">
+          <div class="card__item">
+            <h4 class="item__title">HTML5</h4>
+            <img src="/img/svg/icon-html.svg" alt="HTML5 icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">CSS3</h4>
+            <img src="/img/svg/icon-css.svg" alt="CSS3 icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">Javascript</h4>
+            <img src="/img/svg/icon-js.svg" alt="Javascript icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">Angular2+</h4>
+            <img src="/img/svg/icon-angular.svg" alt="Angular2 icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">Typescript</h4>
+            <img src="/img/svg/icon-typescript.svg" alt="Typescript icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">RxJS</h4>
+            <img src="/img/svg/icon-rxjs.svg" alt="RxJS icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">Sass</h4>
+            <img src="/img/svg/icon-sass.svg" alt="Sass icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">Jest</h4>
+            <img src="/img/svg/icon-jest.svg" alt="Jest icon" />
+          </div>
+          <div class="card__item">
+            <h4 class="item__title">Testing Library</h4>
+            <img
+              src="/img/svg/icon-testing-library.svg"
+              alt="Testing Library icon"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Copyright © 2021 <strong>Matheus Azambuja.</strong> Todos os direitos
+      reservados.
+    </footer>
+
+    <!-- <script src="/js/getEmail.js"></script> -->
+    <!-- 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
     integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -330,6 +414,5 @@
       });
     });
   </script> -->
-</body>
-
+  </body>
 </html>
