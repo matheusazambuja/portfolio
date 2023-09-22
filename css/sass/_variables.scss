@@ -1,0 +1,54 @@
+$height-header: 104px;
+
+// Colors
+$black-normal: #2b2c30;
+$black-dark: #1a1b1f;
+$black-light: #3e3f42;
+$black-dark-menu: #17181a47;
+
+$white-normal: #dcdee5;
+$white-dark: #c5c9d9;
+$white-light1: #ebedf2;
+$white-light2: #f0f0f0;
+$white-light3: #f2f2f2;
+$white-light4: #fbfbfb;
+
+$blue-normal: #274ad7;
+$blue-dark: #1c3ec7;
+$blue-light: #385ceb;
+
+$gray-1: #5d5e61;
+$gray-2: #4d4e51;
+$gray-3: #3e3e40;
+
+.color-gray-1 {
+  color: $gray-1;
+}
+
+.color-gray-2 {
+  color: $gray-2;
+}
+
+.color-gray-3 {
+  color: $gray-3;
+}
+
+// Spacing (Paddings and margins)
+$spacing-x: 4px; // 4px
+$spacing-2x: $spacing-x * 2; // 8px
+$spacing-3x: $spacing-x * 3; // 12px
+$spacing-4x: $spacing-x * 4; // 16px
+$spacing-5x: $spacing-x * 5; // 20px
+$spacing-6x: $spacing-x * 6; // 24px
+$spacing-7x: $spacing-x * 7; // 28px
+$spacing-8x: $spacing-x * 8; // 32px
+$spacing-9x: $spacing-x * 9; // 36px
+$spacing-10x: $spacing-x * 10; // 40px
+$spacing-11x: $spacing-x * 11; // 44px
+$spacing-12x: $spacing-x * 12; // 48px
+$spacing-13x: $spacing-x * 13; // 52px
+$spacing-14x: $spacing-x * 14; // 56px
+$spacing-15x: $spacing-x * 15; // 60px
+$spacing-16x: $spacing-x * 16; // 64px
+$spacing-17x: $spacing-x * 17; // 68px
+$spacing-18x: $spacing-x * 18; // 72px

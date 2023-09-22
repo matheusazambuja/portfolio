@@ -1,13 +1,12 @@
+@import 'sass/variables';
+@import 'sass/typography';
+@import 'sass/layout';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-@import 'sass/colors';
-@import 'sass/typography';
-@import 'sass/spacing';
-@import 'sass/layout';
 
 html {
   scroll-behavior: smooth;
@@ -15,6 +14,21 @@ html {
 
 body {
   background-color: $black-normal;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.primary-button {
+  background-color: transparent;
+  color: $white-normal;
+  font-size: 32px;
+  padding: $spacing-6x $spacing-7x;
+  border: 2px solid $blue-light;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 960px) {
