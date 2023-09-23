@@ -24,6 +24,31 @@
 
   &__link {
     font-size: 24px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -8px;
+      left: 0;
+      background: #538bf0;
+      background: linear-gradient(90deg, #538bf000 0%, $blue-light 100%);
+
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: $white-light3;
+
+      &::after {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+      }
+    }
   }
 }
 
@@ -57,10 +82,20 @@
   &__arrow-down {
     text-align: center;
     position: absolute;
-    bottom: $spacing-5x;
+    bottom: $spacing-15x;
     left: 50%;
     height: 32px;
     width: 32px;
+    animation: arrowAnchorAnimation 1.2s ease 1s infinite alternate;
+
+    @keyframes arrowAnchorAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY($spacing-8x);
+      }
+    }
   }
 }
 
@@ -115,8 +150,6 @@
     }
 
     &:hover {
-      cursor: pointer;
-
       .circle-1 {
         transform: rotate(360deg);
       }
