@@ -187,6 +187,10 @@ h6 {
   margin-top: 110px;
   gap: 40px;
 }
+.home .actions__projects, .home .actions__knowledges {
+  display: block;
+  padding: 16px 36px;
+}
 .home__arrow-down {
   text-align: center;
   position: absolute;
@@ -369,6 +373,7 @@ h6 {
 .knowledges .skills__text {
   color: #a0a0a0;
   font-size: 20px;
+  line-height: 140%;
   margin-top: 64px;
   width: 50%;
   padding-right: 32px;
@@ -455,7 +460,6 @@ body {
   background-color: transparent;
   color: #dcdee5;
   font-size: 20px;
-  padding: 16px 36px;
   border: 2px solid #385ceb;
   border-radius: 8px;
   transition: all 0.3s ease;

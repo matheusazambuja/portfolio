@@ -98,6 +98,14 @@
     gap: $spacing-10x;
   }
 
+  .actions {
+    &__projects,
+    &__knowledges {
+      display: block;
+      padding: $spacing-4x $spacing-9x;
+    }
+  }
+
   &__arrow-down {
     text-align: center;
     position: absolute;
@@ -325,6 +333,7 @@
     &__text {
       color: $gray-light;
       font-size: 20px;
+      line-height: 140%;
       margin-top: $spacing-16x;
       width: 50%;
       padding-right: $spacing-8x;
