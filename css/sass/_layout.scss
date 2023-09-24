@@ -7,7 +7,7 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  padding: $spacing-10x $spacing-15x;
+  padding: $spacing-8x $spacing-15x;
   background-color: $black-dark-menu;
   backdrop-filter: blur(2px);
 
@@ -34,7 +34,7 @@
       bottom: -8px;
       left: 0;
       background: #538bf0;
-      background: linear-gradient(90deg, #538bf000 0%, $blue-light 100%);
+      background: linear-gradient(10deg, #538bf000 0%, $blue-light 100%);
 
       transform: scaleX(0);
       transform-origin: bottom right;
@@ -119,7 +119,6 @@
 
 // About section
 .about {
-  min-height: 100vh;
   padding: 124px 48px;
 
   &__title {
@@ -202,18 +201,12 @@
     &__skills {
       margin-top: $spacing-2x;
       color: $white-normal;
+      margin-bottom: $spacing-5x;
     }
 
     &__text {
       color: $gray-light;
-
-      &:first-child {
-        margin-top: $spacing-8x;
-      }
-
-      &:not(:first-child) {
-        margin-top: $spacing-3x;
-      }
+      margin-top: $spacing-3x;
     }
 
     &__contacts {
@@ -241,7 +234,6 @@
 
 // Projects section
 .projects {
-  min-height: 100vh;
   padding: 124px 48px;
 
   &__title {
@@ -280,13 +272,18 @@
 
     &__link {
       position: absolute;
+      width: 100%;
+      height: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      font-size: 32px;
+      font-size: 24px;
       opacity: 0;
-      transition: all 0.3 ease-in-out;
+      transition: all 0.3s ease-in-out;
       visibility: hidden;
     }
 
@@ -306,7 +303,6 @@
 
 // Knowledges section
 .knowledges {
-  min-height: 100vh;
   padding: 124px 48px;
 
   &__title {
@@ -329,13 +325,15 @@
       color: $gray-light;
       font-size: 20px;
       margin-top: $spacing-16x;
+      width: 50%;
+      padding-right: $spacing-8x;
     }
 
     &__items {
       display: flex;
       flex-wrap: wrap;
-      gap: $spacing-8x;
-      max-width: 60%;
+      gap: $spacing-6x;
+      width: 55%;
     }
 
     &__item {
@@ -352,11 +350,12 @@
       border: 1px solid $black-light;
       border-radius: 4px;
       text-align: center;
-      transition: all 1s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
-        transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+      transition: border 1s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
+        transform 0.8s ease;
 
       &:hover {
-        border: 1px solid $blue-light;
+        border: 1px solid $gray-normal;
+        transform: translate3d(4px, -4px, 0);
 
         .item__title {
           color: $white-light3;
@@ -380,14 +379,15 @@
 
 // Footer
 .footer {
+  background-color: $black-dark-menu;
   color: $white-normal;
-  font-size: 16px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
-  line-height: 150%;
   text-align: center;
 
-  padding: $spacing-12x;
+  padding-top: $spacing-12x;
+  padding-bottom: $spacing-10x;
 
   &__author {
     color: $blue-normal;

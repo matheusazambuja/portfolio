@@ -9,7 +9,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 .primary-button {
   background-color: transparent;
   color: $white-normal;
-  font-size: 24px;
+  font-size: 20px;
   padding: $spacing-4x $spacing-9x;
   border: 2px solid $blue-light;
   border-radius: 8px;
