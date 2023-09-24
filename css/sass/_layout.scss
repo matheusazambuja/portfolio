@@ -19,11 +19,12 @@
   &__list {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: $spacing-18x;
   }
 
   &__link {
-    font-size: 24px;
+    font-size: 18px;
     position: relative;
 
     &::after {

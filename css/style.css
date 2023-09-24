@@ -122,10 +122,11 @@ h6 {
 .menu__list {
   list-style-type: none;
   display: flex;
+  align-items: center;
   gap: 72px;
 }
 .menu__link {
-  font-size: 24px;
+  font-size: 18px;
   position: relative;
 }
 .menu__link::after {
