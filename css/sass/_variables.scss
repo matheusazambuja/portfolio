@@ -5,6 +5,7 @@ $black-normal: #2b2c30;
 $black-dark: #1a1b1f;
 $black-light: #3e3f42;
 $black-dark-menu: #17181a47;
+$black-dark-menu-mobile: #2c2e31;
 
 $white-normal: #dcdee5;
 $white-dark: #c5c9d9;
@@ -41,3 +42,19 @@ $spacing-15x: $spacing-x * 15; // 60px
 $spacing-16x: $spacing-x * 16; // 64px
 $spacing-17x: $spacing-x * 17; // 68px
 $spacing-18x: $spacing-x * 18; // 72px
+
+// Media Queries
+
+$screen-xs: 480px; // Extra small screen / phone
+$screen-sm: 768px; // Small screen / tablet
+$screen-md: 992px; // Medium screen / desktop
+$screen-lg: 1200px; // Large screen / wide desktop
+$screen-xlg: 1600px; // Extra Large screen / wide desktop
+$screen-xxlg: 1900px; // Extra Large screen / wide desktop
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+$screen-lg-max: ($screen-xlg - 1);
+$screen-xlg-max: ($screen-xxlg - 1);

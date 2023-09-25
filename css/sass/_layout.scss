@@ -7,13 +7,15 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  padding: $spacing-8x $spacing-15x;
+  padding: $spacing-8x;
   background-color: $black-dark-menu;
   backdrop-filter: blur(2px);
 
   nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 $spacing-2x;
   }
 
   &__list {
@@ -21,11 +23,33 @@
     display: flex;
     align-items: center;
     gap: $spacing-18x;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+
+    &--active {
+      display: flex;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
+      padding-top: 96px;
+      width: 100vw;
+      height: 100vh;
+      background-color: $black-normal;
+    }
   }
 
   &__link {
     font-size: 18px;
     position: relative;
+
+    @media screen and (max-width: 992px) {
+      font-size: 24px;
+    }
 
     &::after {
       content: '';
@@ -51,6 +75,51 @@
       }
     }
   }
+
+  &__hamburguer {
+    display: none;
+    width: 32px;
+    height: 32px;
+    transform: rotate(0);
+    position: relative;
+
+    &--active {
+      .hamburguer__line:nth-child(1) {
+        transform-origin: left center;
+        transform: rotate(45deg) translateY(-16px);
+        position: absolute;
+      }
+
+      .hamburguer__line:nth-child(2) {
+        width: 0;
+        opacity: 0;
+      }
+
+      .hamburguer__line:nth-child(3) {
+        transform-origin: left center;
+        transform: rotate(-45deg) translateY(16px);
+        position: absolute;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-2x;
+    }
+  }
+
+  .hamburguer {
+    &__line {
+      background-color: $white-light3;
+      width: 32px;
+      height: 1px;
+      border-radius: 2px;
+      transition: all 0.25s ease-in-out;
+    }
+  }
 }
 
 // Home section
@@ -60,13 +129,22 @@
   align-items: center;
   justify-content: center;
 
-  padding: 124px 48px;
+  padding: 124px $spacing-7x;
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
   }
 
   &__subtitle {
@@ -128,7 +206,7 @@
 
 // About section
 .about {
-  padding: 124px 48px;
+  padding: 124px $spacing-7x;
 
   &__title {
     color: $white-normal;
@@ -147,11 +225,28 @@
     background-color: $black-normal;
     padding: $spacing-11x $spacing-14x;
     margin-top: $spacing-13x;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: $spacing-5x $spacing-7x;
+      padding-bottom: $spacing-8x;
+    }
   }
 
   &__image {
     position: relative;
-    height: 200px;
+    width: 194px;
+    height: 194px;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .circle-1 {
       position: absolute;
@@ -164,6 +259,13 @@
       border-color: $white-dark $white-dark $white-dark transparent;
       border-radius: 50%;
       transition: all 1.5s ease-in-out;
+
+      @media screen and (max-width: 768px) {
+        width: 170px;
+        height: 170px;
+        top: 12px;
+        left: 12px;
+      }
     }
 
     .circle-2 {
@@ -173,15 +275,22 @@
       top: -6px;
       left: -6px;
       border-color: $white-dark transparent $white-dark $white-dark;
+
+      @media screen and (max-width: 768px) {
+        width: 176px;
+        height: 176px;
+        top: 9px;
+        left: 8px;
+      }
     }
 
     &:hover {
       .circle-1 {
-        transform: rotate(360deg);
+        transform: rotate(240deg);
       }
 
       .circle-2 {
-        transform: rotate(-360deg);
+        transform: rotate(-240deg);
       }
     }
   }
@@ -190,12 +299,22 @@
     &__photo {
       border-radius: 50%;
       width: 194px;
-      height: 194px;
+      height: auto;
+      transition: all 0.9s ease-in-out;
+
+      @media screen and (max-width: 768px) {
+        width: 164px;
+      }
     }
 
     &__content {
       margin-left: $spacing-11x;
       margin-top: $spacing-6x;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+        margin-top: $spacing-4x;
+      }
     }
 
     &__subtitle {
@@ -243,7 +362,7 @@
 
 // Projects section
 .projects {
-  padding: 124px 48px;
+  padding: 124px $spacing-7x;
 
   &__title {
     color: $white-normal;
@@ -256,13 +375,27 @@
 
   &__items {
     display: flex;
-    gap: $spacing-8x;
+    justify-content: space-between;
     margin-top: $spacing-15x;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 992px) {
+      margin-top: $spacing-8x;
+      gap: $spacing-3x;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: $spacing-8x;
+    }
   }
 
   .item {
     &__card {
       position: relative;
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
 
       &:hover {
         cursor: pointer;
@@ -302,17 +435,29 @@
 
     &__image {
       width: 100%;
-      height: 184px;
+      height: 196px;
       border-radius: 4px;
       border-bottom: 3px solid $blue-light;
       transition: all 0.3s ease-in-out;
+
+      @media screen and (max-width: 1200px) {
+        height: 148px;
+      }
+
+      @media screen and (max-width: 992px) {
+        height: 170px;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: auto;
+      }
     }
   }
 }
 
 // Knowledges section
 .knowledges {
-  padding: 124px 48px;
+  padding: 124px $spacing-7x;
 
   &__title {
     color: $white-normal;
@@ -324,9 +469,16 @@
   }
 
   &__skills {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: $spacing-8x;
     margin-top: $spacing-5x;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: $spacing-8x;
+    }
   }
 
   .skills {
@@ -335,15 +487,26 @@
       font-size: 20px;
       line-height: 140%;
       margin-top: $spacing-16x;
-      width: 50%;
-      padding-right: $spacing-8x;
+      min-height: 70px;
+
+      @media screen and (max-width: 992px) {
+        font-size: 16px;
+        margin-top: $spacing-8x;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
     &__items {
       display: flex;
       flex-wrap: wrap;
       gap: $spacing-6x;
-      width: 55%;
+
+      @media screen and (max-width: 992px) {
+        gap: $spacing-4x;
+      }
     }
 
     &__item {
@@ -354,7 +517,7 @@
       gap: $spacing-3x;
       padding: 0 $spacing-2x;
 
-      width: 120px;
+      width: 20%;
       height: 120px;
       box-shadow: 6px 6px 20px 0 #00000042;
       border: 1px solid $black-light;
@@ -370,6 +533,14 @@
         .item__title {
           color: $white-light3;
         }
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 30%;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 45%;
       }
     }
   }
@@ -398,6 +569,15 @@
 
   padding-top: $spacing-12x;
   padding-bottom: $spacing-10x;
+
+  @media screen and (max-width: 992px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: $spacing-9x;
+    padding-bottom: $spacing-7x;
+  }
 
   &__author {
     color: $blue-normal;

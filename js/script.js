@@ -17,6 +17,7 @@ const KNOWLEDGE_TEXT_CARDS_LIST = [
 document.addEventListener('DOMContentLoaded', () => {
   handleTypeWriter(0);
   initListernersKnowledgeCards();
+  initListenersMenuMobile();
 });
 
 function handleTypeWriter(index) {
@@ -46,4 +47,30 @@ function initListernersKnowledgeCards() {
   });
 
   knowledgeTextElement.innerHTML = KNOWLEDGE_TEXT_DEFAULT;
+}
+
+function initListenersMenuMobile() {
+  document
+    .getElementById('mobile-menu')
+    .addEventListener('click', () => handleOpenMobileMenu());
+
+  document.querySelectorAll('.menu__link').forEach((linkElement) => {
+    linkElement.addEventListener('click', () => handleOpenMobileMenu());
+  });
+}
+
+function handleOpenMobileMenu() {
+  const activeMenuMobileClass = 'menu__hamburguer--active';
+  const mobileMenuElement = document.getElementById('mobile-menu');
+  const menuListElement = document.getElementById('menu-list');
+
+  if (mobileMenuElement.classList.contains(activeMenuMobileClass)) {
+    mobileMenuElement.classList.remove(activeMenuMobileClass);
+    menuListElement.classList.remove('menu__list--active');
+
+    return;
+  }
+
+  mobileMenuElement.classList.add(activeMenuMobileClass);
+  menuListElement.classList.add('menu__list--active');
 }
