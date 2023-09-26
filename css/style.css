@@ -65,6 +65,11 @@ h1 {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   color: #dcdee5;
@@ -74,6 +79,11 @@ h2 {
 @media screen and (max-width: 992px) {
   h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 26px;
   }
 }
 
@@ -87,6 +97,11 @@ h3 {
     font-size: 24px;
   }
 }
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 22px;
+  }
+}
 
 h4 {
   color: #c5c9d9;
@@ -98,6 +113,11 @@ h4 {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 480px) {
+  h4 {
+    font-size: 18px;
+  }
+}
 
 h5 {
   color: #c5c9d9;
@@ -107,6 +127,11 @@ h5 {
 @media screen and (max-width: 992px) {
   h5 {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h5 {
+    font-size: 14px;
   }
 }
 
@@ -675,6 +700,11 @@ body {
 .primary-button:hover {
   cursor: pointer;
   background-color: #385ceb;
+}
+@media screen and (max-width: 480px) {
+  .primary-button {
+    font-size: 16px;
+  }
 }
 
 .border {
